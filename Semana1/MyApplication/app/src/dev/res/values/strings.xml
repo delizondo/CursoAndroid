@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DEV - Application</string>
+    <string name="env_name">Hello DEV</string>
+</resources>
