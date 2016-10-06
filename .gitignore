@@ -42,3 +42,4 @@ captures/
 vcs.xml
 misc.xml
 .idea/*
+gradle.xml
