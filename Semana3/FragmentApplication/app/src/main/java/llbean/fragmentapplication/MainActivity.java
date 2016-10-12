@@ -15,6 +15,11 @@ public class MainActivity extends AppCompatActivity {
         Button button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(new ButtonClickListener());
 
+
+        if (savedInstanceState != null) {
+            return;
+        }
+
         getSupportFragmentManager().beginTransaction().add(R.id.first_container, FragmentB.newInstance(), FragmentB.TAG)
                 .commit();
 
