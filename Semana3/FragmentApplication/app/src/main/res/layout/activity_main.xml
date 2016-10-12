@@ -22,7 +22,6 @@
 
     <fragment
         android:id="@+id/fragment_a"
-
         android:name="llbean.fragmentapplication.FragmentA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
