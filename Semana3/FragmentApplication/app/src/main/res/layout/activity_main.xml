@@ -40,7 +40,7 @@
         android:id="@+id/second_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/fragment_a"
+        android:layout_below="@id/first_container"
         />
 
     <Button

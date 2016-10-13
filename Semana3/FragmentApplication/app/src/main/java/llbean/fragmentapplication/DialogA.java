@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
 import android.widget.Toast;
@@ -32,7 +33,8 @@ public class DialogA extends DialogFragment implements DialogInterface.OnClickLi
         builder.setTitle("Alert!")
                 .setMessage("This is a Fragment Dialog")
                 .setPositiveButton("Ok", this)
-                .setNegativeButton("Cancel", this);
+                .setNegativeButton("Cancel", this)
+                .setNeutralButton("Neutral", this);
 
 
         return builder.create();
@@ -49,6 +51,8 @@ public class DialogA extends DialogFragment implements DialogInterface.OnClickLi
 
         } else if (i == Dialog.BUTTON_NEGATIVE) {
             Toast.makeText(getContext(), "Negative", Toast.LENGTH_SHORT).show();
+        }else if (i == Dialog.BUTTON_NEUTRAL){
+            Toast.makeText(getContext(), "Neutral", Toast.LENGTH_SHORT).show();
         }
     }
 }
