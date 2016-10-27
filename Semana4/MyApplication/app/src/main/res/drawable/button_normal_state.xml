@@ -4,7 +4,8 @@
 
 
     <solid android:color="@color/flamingo"/>
-    <corners android:radius="2dp"/>
+    <corners android:radius="8dp"
+        />
     <stroke
         android:width="2dp"
         android:color="@color/deep_sky_blue"/>

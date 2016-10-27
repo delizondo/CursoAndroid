@@ -3,7 +3,7 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              android:orientation="horizontal"
-             android:stretchColumns="0,2">
+             android:stretchColumns="*">
 
     <TableRow>
 
@@ -91,30 +91,7 @@
 
     <TableRow>
 
-        <TextView
-            android:id="@id/text_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"/>
-
-        <ImageView
-            android:id="@id/image_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_bug"
-            />
-
-        <TextView
-            android:id="@id/text_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"/>
-
-        <TextView
-            android:id="@id/text_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"/>
+        <include layout="@layout/merge_layout" />
     </TableRow>
 
 
