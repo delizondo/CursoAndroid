@@ -6,10 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:paddingBottom="@dimen/sixteen_dp"
-    android:paddingLeft="@dimen/sixteen_dp"
-    android:paddingRight="@dimen/sixteen_dp"
-    android:paddingTop="@dimen/sixteen_dp"
+    android:padding="@dimen/padding"
     android:weightSum="1"
     tools:context="llbean.myapplication.MainActivity">
 
