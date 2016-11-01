@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="name" type="id" />
+    <item name="phone" type="id" />
+    <item name="email" type="id" />
+
+    <item name="list_view" type="id" />
+    <item name="recycler_view" type="id" />
+    <item name="contact_view" type="id" />
+
+    <item name="button1" type="id" />
+    <item name="button2" type="id" />
+    <item name="button3" type="id" />
+    <item name="button4" type="id" />
+    <item name="button5" type="id" />
+    <item name="button6" type="id" />
+</resources>

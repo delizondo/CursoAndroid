@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+
+    <!-- CONTACT INFORMATION -->
+    <string name="email">Email: %s</string>
+    <string name="phone">Phone: %s</string>
+
+
+    <!-- NAVIGATION -->
+    <string name="list_activity">List Activity</string>
+    <string name="recycler_activity">Recycler Activity</string>
+    <string name="pager_activity">Pager Activity</string>
+    <string name="drawer_activity">Drawer Activity</string>
+    <string name="animations">Animations</string>
+</resources>

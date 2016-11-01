@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/iris_blue</color>
+    <color name="colorPrimaryDark">@color/dark_cyan</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="iris_blue">#00BCD4</color>
+    <color name="dark_cyan">#00838F</color>
+    <color name="fruit_salad">#43A047</color>
+    <color name="star_dust">#9E9E9E</color>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tools definition: http://tools.android.com/tech-docs/tools-attributes -->
+
+
+    <TextView
+        android:id="@id/name"
+        style="@style/ContactItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fruit_salad"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:text="David Elizondo"/>
+
+    <TextView
+        android:id="@id/email"
+        style="@style/ContactItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="test@test.com"/>
+
+    <TextView
+        android:id="@id/phone"
+        style="@style/ContactItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="1234567890"/>
+
+</merge>
