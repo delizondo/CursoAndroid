@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".ui.ListViewActivity"/>
         <activity android:name=".ui.RecyclerActivity"/>
+        <activity android:name=".ui.PagerActivity"/>
+        <activity android:name=".ui.DrawerActivity"/>
     </application>
 
 </manifest>

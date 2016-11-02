@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -17,7 +16,7 @@ import llbean.myapplication.util.ContactUtil;
  * Created by david on 10/31/16.
  */
 
-public class RecyclerActivity extends AppCompatActivity {
+public class RecyclerActivity extends BaseActivity {
 
 
     public static Intent makeIntent(Context context) {
@@ -27,8 +26,6 @@ public class RecyclerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recycler_activity);
-
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
@@ -47,5 +44,10 @@ public class RecyclerActivity extends AppCompatActivity {
 
         recyclerView.setAdapter(adapter);
 
+    }
+
+    @Override
+    protected int getLayoutResource() {
+        return R.layout.recycler_activity;
     }
 }
