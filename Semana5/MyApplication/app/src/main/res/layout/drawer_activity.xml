@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@id/nav_drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+
+
+    <include layout="@layout/drawer_nav_layout"/>
+
+    <!-- The navigation drawer -->
+
+    <fragment
+        android:id="@id/drawer_content"
+        android:name="llbean.myapplication.ui.DrawerFragment"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"/>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -5,7 +5,11 @@
 
     <dimen name="text_view_padding">8dp</dimen>
     <dimen name="button_padding">4dp</dimen>
-    <dimen name="divider">8dp</dimen>
+    <dimen name="divider">4dp</dimen>
     <dimen name="text_size">250sp</dimen>
+
+    <dimen name="eight_dp">8dp</dimen>
+    <dimen name="twelve_dp">12dp</dimen>
+    <dimen name="image_size">120dp</dimen>
 
 </resources>

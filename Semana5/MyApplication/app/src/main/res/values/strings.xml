@@ -13,4 +13,15 @@
     <string name="pager_activity">Pager Activity</string>
     <string name="drawer_activity">Drawer Activity</string>
     <string name="animations">Animations</string>
+
+    <string name="open_fragment_a">Open Fragment A</string>
+    <string name="open_fragment_b">Open Fragment B</string>
+
+    <string name="fragment_a">Fragment A</string>
+    <string name="fragment_b">Fragment B</string>
+
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+
 </resources>

@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@color/iris_blue</color>
-    <color name="colorPrimaryDark">@color/dark_cyan</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">@color/fruit_salad</color>
+    <color name="colorPrimaryDark">@color/la_palma</color>
+    <color name="colorAccent">@color/dodger_blue</color>
 
-    <color name="iris_blue">#00BCD4</color>
-    <color name="dark_cyan">#00838F</color>
-    <color name="fruit_salad">#43A047</color>
+
+    <color name="purple_heart">#673AB7</color>
+    <color name="red_orange">#F44336</color>
+    <color name="violet_blue">#3F51B5</color>
+    <color name="dodger_blue">#2196F3</color>
+    <color name="deep_sky_blue">#03A9F4</color>
+    <color name="gossamer">#009688</color>
+    <color name="la_palma">#388E3C</color>
+    <color name="fruit_salad">#4CAF50</color>
+    <color name="mantis">#8BC34A</color>
+    <color name="las_palmas">#CDDC39</color>
+    <color name="gorse">#FFEB3B</color>
+    <color name="mikado_yellow">#FFC107</color>
+    <color name="safety_orange">#FF9800</color>
+    <color name="flamingo">#FF5722</color>
+    <color name="roman_coffee">#795548</color>
     <color name="star_dust">#9E9E9E</color>
+    <color name="hoki">#607D8B</color>
 </resources>

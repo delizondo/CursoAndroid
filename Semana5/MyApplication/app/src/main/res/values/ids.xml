@@ -1,28 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="name" type="id" />
-    <item name="phone" type="id" />
-    <item name="email" type="id" />
+    <item name="name" type="id"/>
+    <item name="phone" type="id"/>
+    <item name="email" type="id"/>
 
-    <item name="list_view" type="id" />
-    <item name="recycler_view" type="id" />
-    <item name="contact_view" type="id" />
+    <item name="coordinator" type="id"/>
+    <item name="list_view" type="id"/>
+    <item name="recycler_view" type="id"/>
+    <item name="contact_view" type="id"/>
+    <item name="collapsing_toolbar" type="id"/>
 
-    <item name="button1" type="id" />
-    <item name="button2" type="id" />
-    <item name="button3" type="id" />
-    <item name="button4" type="id" />
-    <item name="button5" type="id" />
-    <item name="button6" type="id" />
 
-    <item name="view_pager" type="id" />
-    <item name="tabs" type="id" />
-    <item name="text1" type="id" />
-    <item name="toolbar" type="id" />
-    <item name="nav_drawer" type="id" />
-    <item name="drawer_content" type="id" />
-    <item name="content" type="id" />
+    <item name="button1" type="id"/>
+    <item name="button2" type="id"/>
+    <item name="button3" type="id"/>
+    <item name="button4" type="id"/>
+    <item name="button5" type="id"/>
+    <item name="button6" type="id"/>
 
+    <item name="view_pager" type="id"/>
+    <item name="tabs" type="id"/>
+    <item name="text1" type="id"/>
+    <item name="toolbar" type="id"/>
+    <item name="nav_drawer" type="id"/>
+    <item name="drawer_content" type="id"/>
+    <item name="content" type="id"/>
+
+    <item name="menu1" type="id"/>
+    <item name="menu2" type="id"/>
+    <item name="menu3" type="id"/>
+
+    <item name="android_image" type="id"/>
+    <item name="wrapper" type="id"/>
+    <item name="corner_1" type="id"/>
+    <item name="corner_2" type="id"/>
+    <item name="corner_3" type="id"/>
+    <item name="corner_4" type="id"/>
 
 
 </resources>

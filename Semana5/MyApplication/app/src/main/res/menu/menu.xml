@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@id/menu1"
+        android:icon="@drawable/ic_photo"
+        app:showAsAction="always"
+        android:title="@string/option_1"/>
+
+    <item
+        android:id="@id/menu2"
+        android:icon="@drawable/ic_pizza"
+        app:showAsAction="ifRoom"
+        android:title="@string/option_2"/>
+
+    <item
+        android:id="@id/menu3"
+        android:title="@string/option_3"/>
+
+
+</menu>
