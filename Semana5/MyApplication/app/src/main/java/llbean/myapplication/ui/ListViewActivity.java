@@ -4,9 +4,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import llbean.myapplication.R;
+import llbean.myapplication.bo.Contact;
 import llbean.myapplication.ui.Adapter.ListAdapter;
 import llbean.myapplication.util.ContactUtil;
 
