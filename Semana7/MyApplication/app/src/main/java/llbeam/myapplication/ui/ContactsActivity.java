@@ -1,4 +1,4 @@
-package llbeam.myapplication;
+package llbeam.myapplication.ui;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -17,6 +17,11 @@ import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import llbeam.myapplication.bo.MyContact;
+import llbeam.myapplication.R;
+import llbeam.myapplication.adapter.DividerDecorator;
+import llbeam.myapplication.adapter.MyContactAdapter;
 
 
 /**

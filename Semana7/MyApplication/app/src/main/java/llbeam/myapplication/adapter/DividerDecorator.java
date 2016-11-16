@@ -1,4 +1,4 @@
-package llbeam.myapplication;
+package llbeam.myapplication.adapter;
 
 import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;
