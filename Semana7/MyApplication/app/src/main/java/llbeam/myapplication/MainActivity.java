@@ -72,4 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(this, ContactsActivity.class);
         startActivity(intent);
     }
+
+
+
 }
