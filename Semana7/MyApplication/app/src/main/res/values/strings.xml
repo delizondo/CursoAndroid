@@ -6,4 +6,8 @@
     <string name="clean_preferences">Clean Preferences</string>
     <string name="load_contacts">Load Contacts</string>
 
+    <string name="name">Name: %s</string>
+    <string name="phone">Phone: %s</string>
+    <string name="id">Id: %s</string>
+
 </resources>
