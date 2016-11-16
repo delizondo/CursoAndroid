@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="edittext1" type="id" />
+    <item name="textview1" type="id" />
+
+    <item name="button1" type="id" />
+    <item name="button2" type="id" />
+    <item name="button3" type="id" />
+    <item name="list" type="id" />
+
+    <item name="name" type="id" />
+    <item name="phone" type="id" />
+    <item name="id" type="id" />
+
+
+</resources>

@@ -71,7 +71,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void openIntentActivity() {
+
+        Contact newContact = new Contact();
+        newContact.setName("Hola");
+        newContact.setLastName("Mundo");
+
         Intent intent = new Intent(this, IntentActivity.class);
+        intent.putExtra("extra", newContact);
+
         startActivity(intent);
     }
 
