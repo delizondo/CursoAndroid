@@ -1,4 +1,4 @@
-package llbeam.myapplication;
+package llbeam.myapplication.bo;
 
 /**
  * Created by david on 11/16/16.

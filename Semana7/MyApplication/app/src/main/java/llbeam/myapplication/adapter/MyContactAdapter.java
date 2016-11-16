@@ -1,4 +1,4 @@
-package llbeam.myapplication;
+package llbeam.myapplication.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.List;
+
+import llbeam.myapplication.bo.MyContact;
+import llbeam.myapplication.R;
 
 /**
  * Created by david on 11/16/16.

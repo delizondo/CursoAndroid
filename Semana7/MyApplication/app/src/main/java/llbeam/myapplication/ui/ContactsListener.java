@@ -1,6 +1,8 @@
-package llbeam.myapplication;
+package llbeam.myapplication.ui;
 
 import java.util.List;
+
+import llbeam.myapplication.bo.MyContact;
 
 /**
  * Created by david on 11/16/16.
