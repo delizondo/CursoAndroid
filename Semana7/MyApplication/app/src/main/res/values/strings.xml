@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
+
+    <string name="saved_value">Saved Value: %s</string>
+    <string name="save_data">Save in Preferences</string>
+    <string name="clean_preferences">Clean Preferences</string>
+    <string name="load_contacts">Load Contacts</string>
+
 </resources>
