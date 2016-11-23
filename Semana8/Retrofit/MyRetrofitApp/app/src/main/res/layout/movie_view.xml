@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/zircon"
+              android:elevation="4dp"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+
+    <ImageView
+        android:id="@id/poster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:scaleType="center"
+        android:src="@mipmap/ic_launcher"/>
+
+
+    <TextView
+        android:id="@id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:text="Name: Batman Returns"/>
+
+    <TextView
+        android:id="@id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:text="Year: 2005"/>
+
+
+</LinearLayout>
