@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -89,9 +90,13 @@ public class ContactsActivity extends AppCompatActivity implements ContactsListe
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-        if (requestCode == CONTACTS_PERSMISSIONS_CODE && grantResults.length > 0
-                && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            loadContactsWithCellPhone();
+        if(requestCode == CONTACTS_PERSMISSIONS_CODE){
+            if( grantResults.length > 0
+                    && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                loadContactsWithCellPhone();
+            }else{
+                Toast.makeText(this, "Permissions Denied", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
