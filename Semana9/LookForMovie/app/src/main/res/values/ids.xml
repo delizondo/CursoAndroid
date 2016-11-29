@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="poster" type="id"/>
+    <item name="name" type="id"/>
+    <item name="year" type="id"/>
+    <item name="button1" type="id"/>
+    <item name="search" type="id"/>
+    <item name="recyclerView" type="id"/>
+</resources>

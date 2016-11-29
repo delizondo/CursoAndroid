@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="search"
+            type="myapplication.lookformovie.viewModel.SearchViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+        <EditText
+            android:id="@id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@{search.query}"
+            android:addTextChangedListener="@{search.searchTextWatcher}"
+            />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/button1"
+
+            android:layout_below="@id/search"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:scrollbars="vertical"/>
+
+
+        <Button
+            android:id="@id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="@{search.searchMoviesClickListener()}"
+            android:text="@string/button_search"/>
+    </RelativeLayout>
+</layout>
