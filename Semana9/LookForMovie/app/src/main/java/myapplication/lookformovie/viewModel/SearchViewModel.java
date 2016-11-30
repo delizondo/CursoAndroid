@@ -42,7 +42,6 @@ public class SearchViewModel extends BaseObservable {
     public SearchViewModel(Context context, RecyclerView recyclerView) {
         mAdapter = new MovieAdapter(context);
         recyclerView.setAdapter(mAdapter);
-        recyclerView.addOnScrollListener(new onScrollListener());
         mCurrentPage = 1;
     }
 
@@ -113,7 +112,7 @@ public class SearchViewModel extends BaseObservable {
         }
     };
 
-    private class onScrollListener extends RecyclerView.OnScrollListener {
+    public RecyclerView.OnScrollListener onScrollListener = new RecyclerView.OnScrollListener() {
         @Override
         public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
             super.onScrollStateChanged(recyclerView, newState);
@@ -139,5 +138,5 @@ public class SearchViewModel extends BaseObservable {
                     }
             }
         }
-    }
+    };
 }
