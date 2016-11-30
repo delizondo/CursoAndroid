@@ -5,11 +5,10 @@ import android.databinding.BaseObservable;
 import android.databinding.Bindable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 
+import myapplication.lookformovie.BR;
 import myapplication.lookformovie.MyApplication;
 import myapplication.lookformovie.models.MovieFeed;
 import myapplication.lookformovie.views.adapter.MovieAdapter;
@@ -64,7 +63,7 @@ public class SearchViewModel extends BaseObservable {
 
     public void setQuery(String query) {
         mQuery = query;
-        notifyChange();
+        notifyPropertyChanged(BR.search);
 
     }
 
@@ -82,9 +81,11 @@ public class SearchViewModel extends BaseObservable {
             @Override
             public void onResponse(Call<MovieFeed> call, Response<MovieFeed> response) {
                 Log.d(TAG, "success");
-                mAdapter.addMovies(response.body().getMovies());
-                mTotalPages = response.body().getTotalResults();
                 mIsLoading = false;
+                if (response.body().getMovies() != null) {
+                    mAdapter.addMovies(response.body().getMovies());
+                    mTotalPages = response.body().getTotalResults();
+                }
             }
 
             @Override
@@ -94,23 +95,6 @@ public class SearchViewModel extends BaseObservable {
         });
     }
 
-
-    public TextWatcher searchTextWatcher = new TextWatcher() {
-        @Override
-        public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-        }
-
-        @Override
-        public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-        }
-
-        @Override
-        public void afterTextChanged(Editable s) {
-            mQuery = s.toString();
-        }
-    };
 
     public RecyclerView.OnScrollListener onScrollListener = new RecyclerView.OnScrollListener() {
         @Override
