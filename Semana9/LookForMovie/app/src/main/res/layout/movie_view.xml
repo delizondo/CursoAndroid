@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="movie"
+            type="myapplication.lookformovie.viewModel.MovieViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/movieView"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/zircon"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@id/poster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="center"
+            android:src="@mipmap/ic_launcher"
+            app:imageUrl="@{movie.poster}"/>
+
+
+        <TextView
+            android:id="@id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@{movie.title}"
+            tools:text="Name: Batman Returns"/>
+
+        <TextView
+            android:id="@id/year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@{movie.year}"
+            tools:text="Year: 2005"/>
+
+
+    </LinearLayout>
+</layout>

@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String value = mEditText.getText().toString();
         SharedPreferences.Editor editor = MyApplication.getInstance().getApplicationPreferences().edit();
         editor.putString(SAVED_VALUE, value);
-        editor.commit();
+        editor.apply();
 
         Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show();
     }
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void cleanPreferences() {
         SharedPreferences.Editor editor = MyApplication.getInstance().getApplicationPreferences().edit();
-        editor.clear();
+        editor.remove(SAVED_VALUE);
         editor.commit();
 
         Toast.makeText(this, "Cleaned", Toast.LENGTH_SHORT).show();
