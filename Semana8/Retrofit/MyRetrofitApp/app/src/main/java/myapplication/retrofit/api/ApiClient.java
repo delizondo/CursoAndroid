@@ -1,6 +1,8 @@
 package myapplication.retrofit.api;
 
 import myapplication.retrofit.Constants;
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -17,9 +19,19 @@ public class ApiClient {
 
         if (sRetrofit == null) {
 
+
+            HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
+
+            loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+
+            OkHttpClient.Builder okHttpClient = new OkHttpClient.Builder();
+
+            okHttpClient.addInterceptor(loggingInterceptor);
+
             sRetrofit = new Retrofit.Builder()
                     .baseUrl(Constants.ENDPOINT)
                     .addConverterFactory(GsonConverterFactory.create())
+                    .client(okHttpClient.build())
                     .build();
         }
         return sRetrofit;

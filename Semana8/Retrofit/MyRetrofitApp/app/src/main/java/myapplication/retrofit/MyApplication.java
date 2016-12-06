@@ -22,6 +22,7 @@ public class MyApplication extends Application {
         super.onCreate();
         sInstance = this;
         mApiInterface = ApiClient.getInstance().create(ApiInterface.class);
+
     }
 
     public ApiInterface getAPI() {
