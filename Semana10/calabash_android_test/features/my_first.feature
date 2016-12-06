@@ -5,4 +5,5 @@ Feature: Login feature
     Then I press view with id "search"
     Then I search for the movie "Batman"
     Then I press view with id "button1"
+    Then I wait for 5 seconds
     Then I should see "Batman Begins"
