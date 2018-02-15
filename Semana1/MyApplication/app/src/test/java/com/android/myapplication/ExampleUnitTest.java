@@ -1,4 +1,4 @@
-package com.llbean.myapplication;
+package com.android.myapplication;
 
 import org.junit.Test;
 

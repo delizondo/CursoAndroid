@@ -1,4 +1,4 @@
-package com.llbean.myapplication;
+package com.android.myapplication;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

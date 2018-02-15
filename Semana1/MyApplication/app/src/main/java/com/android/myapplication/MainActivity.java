@@ -1,4 +1,4 @@
-package com.llbean.myapplication;
+package com.android.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

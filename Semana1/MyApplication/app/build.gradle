@@ -2,9 +2,9 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.2"
+    buildToolsVersion "27.0.3"
     defaultConfig {
-        applicationId "com.llbean.myapplication"
+        applicationId "com.android.myapplication"
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
@@ -12,12 +12,14 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
+    flavorDimensions "main"
     productFlavors {
         dev {
-            applicationId "com.llbean.myapplication.dev"
+            dimension "main"
+            applicationId "com.android.myapplication.dev"
         }
         prod {
-
+            dimension "main"
         }
     }
 
