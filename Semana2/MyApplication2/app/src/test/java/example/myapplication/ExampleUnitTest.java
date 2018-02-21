@@ -1,4 +1,4 @@
-package llbeam.myapplication;
+package example.myapplication;
 
 import org.junit.Test;
 

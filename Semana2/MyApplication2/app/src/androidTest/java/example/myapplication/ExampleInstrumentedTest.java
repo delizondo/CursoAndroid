@@ -1,4 +1,4 @@
-package llbeam.myapplication;
+package example.myapplication;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
