@@ -1,4 +1,4 @@
-package llbean.fragmentapplication;
+package example.fragmentapplication;
 
 import android.app.Dialog;
 import android.content.DialogInterface;

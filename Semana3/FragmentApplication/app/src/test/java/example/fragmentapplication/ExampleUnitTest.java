@@ -1,4 +1,4 @@
-package llbean.fragmentapplication;
+package example.fragmentapplication;
 
 import org.junit.Test;
 
