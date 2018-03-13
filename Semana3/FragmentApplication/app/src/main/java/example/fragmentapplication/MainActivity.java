@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View view) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.second_container, FragmentD.newInstance(), FragmentD.TAG)
+            getSupportFragmentManager().beginTransaction().add(R.id.second_container, FragmentD.newInstance(), FragmentD.TAG)
                     .addToBackStack(FragmentD.TAG).commit();
         }
     }

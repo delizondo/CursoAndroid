@@ -8,7 +8,7 @@
     android:orientation="horizontal"
     android:padding="@dimen/padding"
     android:weightSum="1"
-    tools:context="llbean.myapplication.MainActivity">
+    tools:context="example.myapplication.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
