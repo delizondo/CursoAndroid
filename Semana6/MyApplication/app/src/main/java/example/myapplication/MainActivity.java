@@ -1,4 +1,4 @@
-package llbean.myapplication;
+package example.myapplication;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -11,8 +11,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import static llbean.myapplication.Constants.BROADCAST_FILTER;
-import static llbean.myapplication.Constants.EXTRA_TIMER_VALUE;
+import static example.myapplication.Constants.BROADCAST_FILTER;
+import static example.myapplication.Constants.EXTRA_TIMER_VALUE;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

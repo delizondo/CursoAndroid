@@ -1,7 +1,6 @@
-package llbean.myapplication;
+package example.myapplication;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -14,7 +13,7 @@ import android.widget.Toast;
 
 import java.io.File;
 
-import static llbean.myapplication.Constants.OPEN_CAMERA_CODE;
+import static example.myapplication.Constants.OPEN_CAMERA_CODE;
 
 /**
  * Created by david on 11/9/16.

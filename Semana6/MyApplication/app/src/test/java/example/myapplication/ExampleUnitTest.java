@@ -1,4 +1,4 @@
-package llbean.myapplication;
+package example.myapplication;
 
 import org.junit.Test;
 

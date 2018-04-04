@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="llbean.myapplication"
+<manifest package="example.myapplication"
           xmlns:android="http://schemas.android.com/apk/res/android"
     >
 
@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="example.myapplication.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -35,7 +35,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".IntentActivity">
+        <activity android:name="example.myapplication.IntentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEND"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -45,9 +45,9 @@
         </activity>
 
 
-        <service android:name=".ExampleService"/>
+        <service android:name="example.myapplication.ExampleService"/>
 
-        <receiver android:name=".PhoneStateReceiver">
+        <receiver android:name="example.myapplication.PhoneStateReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE"/>
             </intent-filter>

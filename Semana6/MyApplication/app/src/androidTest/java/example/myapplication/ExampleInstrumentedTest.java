@@ -1,4 +1,4 @@
-package llbean.myapplication;
+package example.myapplication;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("llbean.myapplication", appContext.getPackageName());
+        assertEquals("example.myapplication", appContext.getPackageName());
     }
 }

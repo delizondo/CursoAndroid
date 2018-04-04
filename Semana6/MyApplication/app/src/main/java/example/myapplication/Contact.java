@@ -1,4 +1,4 @@
-package llbean.myapplication;
+package example.myapplication;
 
 import android.os.Parcel;
 import android.os.Parcelable;

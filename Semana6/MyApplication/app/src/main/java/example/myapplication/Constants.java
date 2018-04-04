@@ -1,4 +1,4 @@
-package llbean.myapplication;
+package example.myapplication;
 
 /**
  * Created by david on 11/9/16.
