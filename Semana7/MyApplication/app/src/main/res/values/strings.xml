@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Clase 7</string>
 
     <string name="saved_value">Saved Value: %s</string>
     <string name="save_data">Save in Preferences</string>

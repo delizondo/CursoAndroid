@@ -83,9 +83,9 @@ public class IntentActivity extends AppCompatActivity implements View.OnClickLis
 
     private void openCameraIntent() {
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-       // File f = getPictureFile();
-        //Uri contentUri = Uri.fromFile(f);
-        //intent.putExtra(MediaStore.EXTRA_OUTPUT, contentUri);
+        File f = getPictureFile();
+        Uri contentUri = Uri.fromFile(f);
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, contentUri);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(intent, OPEN_CAMERA_CODE);
         }
@@ -101,16 +101,16 @@ public class IntentActivity extends AppCompatActivity implements View.OnClickLis
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == OPEN_CAMERA_CODE && resultCode == RESULT_OK) {
 
-            Bundle bundle = data.getExtras();
+            /*Bundle bundle = data.getExtras();
             Bitmap image = (Bitmap) bundle.getParcelable("data");
 
-            mImageView.setImageBitmap(image);
+            mImageView.setImageBitmap(image);*/
 
 
-            /*Intent intent = new Intent();
+            Intent intent = new Intent();
             intent.setAction(Intent.ACTION_VIEW);
             intent.setDataAndType(Uri.parse("file://" + getPictureFile().getAbsolutePath()), "image/*");
-            startActivity(intent);*/
+            startActivity(intent);
 
         }
     }
