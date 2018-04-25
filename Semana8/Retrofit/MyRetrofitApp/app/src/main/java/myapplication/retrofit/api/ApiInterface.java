@@ -14,7 +14,7 @@ import retrofit2.http.Query;
 
 public interface ApiInterface {
 
-    @GET("?y=&plot=short&r=json")
+    @GET("?y=&plot=short&apikey=6cbcbe3c&r=json")
     Call<MovieFeed> getImages(@Query("s") String query);
 
 }
